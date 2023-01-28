@@ -1,0 +1,67 @@
+<script>
+
+document.write("Szathury Zsolt, Ruander Team 12 <br> <hr>");
+document.write("html: 98 <br>");
+document.write("css: 80 <br>");
+document.write("JavaScript: 60 <br> <hr>");
+
+let szam = prompt("Adjon meg egy számot");
+let hatvany = prompt("Adja meg a hatványozás mértékét");
+
+let eredmény = szam ** hatvany;
+
+document.write(`A ${szam} ${hatvany}. hatványa a ${eredmény}`);
+document.write("<hr>");
+
+let min = Number(prompt("Adjon meg egy minimum érteket"));
+let max = Number(prompt("Adjon meg egy maximum érteket"));
+
+let megoldas = Math.floor(Math.random() * (max - min + 1)/ 2 + min) * 2;
+
+document.write(`A ${min} és ${max} közötti random páros szám ${megoldas}`);
+document.write("<hr>");
+
+let kor = Number(prompt("Adon meg egy életkor 1-120-ig"));
+
+if (kor < 0 || kor > 120) {
+		document.write(`Hibás adat`);
+}
+else if (kor < 12) {
+		document.write(`A(z) ${kor} éves személy Gyermekkorban van`);
+	}
+else if (kor < 16) {
+		document.write(`A(z) ${kor} éves személy Serdülőkorban van`);
+	}
+else if (kor < 20) {
+		document.write(`A(z) ${kor} éves személy Ifjúkorban van`);
+	}
+else if (kor < 30) {
+		document.write(`A(z) ${kor} éves személy Fiatal felnőttkorban van`);
+	}
+else if (kor < 6){
+	document.write(`A(z) ${kor} éves személy Kisgyermekkorban van`);;
+	}
+else{ 
+        document.write(`A(z) ${kor} éves személy Aggkorban van`);
+    }
+document.write("<hr>");
+
+
+let bekertSzam = Number(prompt("Adjon meg egy számot:"));
+let oszto = Number(prompt("Adja meg az osztót:"));
+if (bekertSzam % oszto == 0){
+	document.write(`A ${oszto} osztója ${bekertSzam}-nek`);
+}
+else{
+	document.write(`A ${oszto} NEM osztója ${bekertSzam} értéknek`);
+}
+document.write("<hr>");
+
+document.write("Az első 10 négyzetszám:");
+for (let i = 1; i <= 10; i++){
+	document.write( i*i + ",");
+}
+
+</script>
+
+
