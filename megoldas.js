@@ -1,3 +1,5 @@
+// Szathury Zsolt, Junior Frontend, #Team12
+
 function keszito(){
     document.write("Szathury Zsolt");
     document.write("<br>Junior Frontend");
