@@ -1,7 +1,5 @@
 body{
   color: #293647;
-  margin-top: 0px;
-  margin-bottom: 15px;
 }
 
 .bg-fej {
@@ -45,3 +43,6 @@ a {
   visibility:hidden;
 }
 
+#szelesseg, #magassag {
+  margin-top: 0px auto 15px;
+}
